@@ -1,14 +1,16 @@
 import 'bootstrap';
 import navbar from './tab/navbar';
+import sectionInfo from './tab/sectionInfo';
+import './scss/app.scss';
 
 
-function component() {
+function componentHeader() {
   var element = document.createElement('header');
-
-  // use your function!
-  
   element.insertAdjacentHTML('beforeEnd', navbar.outerHTML);
   return element;
 }
 
-document.body.appendChild(component());
+
+
+document.body.appendChild(componentHeader());
+document.body.appendChild(sectionInfo);
