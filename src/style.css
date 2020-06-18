@@ -2,3 +2,8 @@
   color: red;
   background: url('./conference.png');
 }
+
+.wrapper-info{
+  background-color: azure;
+}
+
