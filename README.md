@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://raw.githack.com/rubenpazch/js-restaurant-page/feature-restaurant/dist/index.html)
 
 
 ## Getting Started
