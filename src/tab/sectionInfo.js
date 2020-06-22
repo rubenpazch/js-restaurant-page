@@ -1,14 +1,14 @@
 import bg from '../img/bgTop.jpg';
 
 const sectionInfo = document.createElement('section');
-sectionInfo.className ='wrapper-info min-mw-100  min-vh-100 p-5';
-sectionInfo.setAttribute('id','section-info');
+sectionInfo.className = 'wrapper-info min-mw-100  min-vh-100 p-5';
+sectionInfo.setAttribute('id', 'section-info');
 
 const h1 = document.createElement('h1');
 h1.appendChild(document.createTextNode('El Truco Restaurant'));
 
 const div = document.createElement('div');
-div.className = "img-info";
+div.className = 'img-info';
 
 
 const img = new Image();

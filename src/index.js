@@ -15,22 +15,22 @@ const nav = document.querySelector('#topnavbar');
 const activeInfo = document.querySelector('.activeInfo');
 activeInfo.innerHTML = sectionInfo.outerHTML;
 
-nav.addEventListener('click', e => {   
-   if (e.target) {
+nav.addEventListener('click', e => {
+  if (e.target) {
     const selectedMenu = e.target.id;
 
     switch (selectedMenu) {
       case 'Menu':
         activeInfo.innerHTML = sectionMenu.outerHTML;
-        break;      
+        break;
       case 'Home':
         activeInfo.innerHTML = sectionInfo.outerHTML;
         break;
       case 'Contacts':
         activeInfo.innerHTML = sectionContact.outerHTML;
-        break
+        break;
       default:
         activeInfo.innerHTML = sectionInfo.outerHTML;
     }
-   }
+  }
 });
