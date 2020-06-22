@@ -34,21 +34,3 @@ nav.addEventListener('click', e => {
     }
    }
 });
-
-
-//function componentHeader() {
-//  var element = document.createElement('header');
-//  element.insertAdjacentHTML('beforeEnd', navbar.outerHTML);
-//  return element;
-//}
-
-
-//document.querySelector('#topnavbar').addEventListener('click', (event) => {
-//  let target = event.target;
-//  console.log(target);
-//});
-
-//document.body.appendChild(componentHeader());
-//document.body.appendChild(sectionInfo);
-//document.body.appendChild(sectionMenu);
-
