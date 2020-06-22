@@ -10,7 +10,7 @@ const divInfo = document.createElement('div');
 divInfo.className = "img-info";
 
 const p = document.createElement('p');
-p.appendChild(document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi debitis earum magni itaque velit autem iure, vitae harum assumenda at officia explicabo aliquid neque doloremque repellendus error alias laudantium.'));
+p.appendChild(document.createTextNode('In 1980-1990 it was the first tourist restaurant giving rise to the trajectory and aside to the Gastronomy and History of the Millennial Cusco " The Trick", now today Inka Wasi Machupicchu Restaurant.'));
 
 const div = document.createElement('div');
 div.className = "container w-25";
