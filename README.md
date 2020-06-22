@@ -4,17 +4,18 @@
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+This project is about building a static website for a restaurant using pure javascript, Webpack, modules, building the entire site using just Javascript, and get more practice on DOM manipulation by dynamically rendering a simple restaurant homepage.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Javascript,
+- Webpack,
+- Webpack modules
+-
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](#)
 
 
 ## Getting Started
