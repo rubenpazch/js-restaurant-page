@@ -13,7 +13,7 @@ div1.className = "container";
 const div2 = document.createElement('div');
 div2.className = "row";
 
-function componentCard() {
+function componentCard(title, photo, content) {
   const cardMenu = document.createElement('div');
   cardMenu.className ='col card p-3 mx-3';
 

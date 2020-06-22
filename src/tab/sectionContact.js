@@ -9,41 +9,50 @@ h1.appendChild(document.createTextNode('Contact us!'));
 const divInfo = document.createElement('div');
 divInfo.className = "img-info";
 
-
 const p = document.createElement('p');
 p.appendChild(document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi debitis earum magni itaque velit autem iure, vitae harum assumenda at officia explicabo aliquid neque doloremque repellendus error alias laudantium.'));
-
 
 const div = document.createElement('div');
 div.className = "container w-25";
 
-const div1 = document.createElement('div');
-div1.className = "form-row";
+function componetForm(title, type, id, formType){
+  const divFormGroup = document.createElement('div');
+  divFormGroup.className = "form-group  text-left";
+  
+  const divFormGroup2 = document.createElement('div');
+  divFormGroup2.className = "form-group  text-left";
 
-const div11 = document.createElement('div');
-div11.className = "form-group col";
+  const labelform = document.createElement('label');
 
-const labelEmail = document.createElement('label');
-labelEmail.setAttribute("for","inputEmail4");
-labelEmail.appendChild(document.createTextNode('Email'));
+  let labelfor = `label${title}`;
+  labelform.setAttribute("for",labelfor);
+  labelform.appendChild(document.createTextNode(title));
 
-const inputEmail = document.createElement('label');
-inputEmail.className = "form-control";
-inputEmail.setAttribute("type","email");
-inputEmail.setAttribute("id","inputEmail4");
-inputEmail.setAttribute("placeholder","Email");
+  const inputform = document.createElement(formType);
+  inputform.className = "form-control";
+  inputform.setAttribute("type",type);  
+  inputform.setAttribute("id",id);
+  inputform.setAttribute("placeholder",title);
 
-div11.appendChild(labelEmail);
-div11.appendChild(inputEmail);
-div1.appendChild(div11);
-div.appendChild(div1);
+  divFormGroup.appendChild(labelform);
+  divFormGroup.appendChild(inputform);
+  return divFormGroup;
+}
+
+const buttonSubmit = document.createElement('button');
+buttonSubmit.className = "btn btn-primary";
+buttonSubmit.setAttribute("type","submit");
+buttonSubmit.appendChild(document.createTextNode('Sign in'));
+
+div.appendChild(componetForm("Email", "email", "inputEmail", "input"));
+div.appendChild(componetForm("Address", "text", "inputAddress", "input"));
+div.appendChild(componetForm("Message", "email", "inputMessage", "textarea"));
+div.appendChild(buttonSubmit);
 
 divInfo.appendChild(p);
 divInfo.appendChild(div);
 
 sectionContact.appendChild(h1);
 sectionContact.appendChild(divInfo);
-
-
 
 export default sectionContact;
